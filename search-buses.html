@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Bus Travels , AC..</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="search.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYrYzZYA5DHxmRF1CjaeoPztKr4LU-g8C8GA&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="view seats.css" />
+  </head>
+  <style>
+    body {
+      height: 1100px;
+    }
+  </style>
+  <body>
+    <div id="bodyContainer">
+      <div class="nxtHeader">
+        <div class="Main_Header">
+          <div class="Bus_Image">
+            <a href="http://127.0.0.1:5501/?"
+              ><img src="Images/redbus logo.png" alt="RedBus_Image"
+            /></a>
+          </div>
+          <div class="Left_Bar">
+            <nav>
+              <ul class="ul1">
+                <li class="li1">BUS TICKETS</li>
+                <hr class="horizontal" />
+                <li class="list4">
+                  rYde
+                  <sup style="font-weight: bold">New</sup>
+                </li>
+                <li class="list4">
+                  redRail
+                  <sup style="font-weight: bold">New</sup>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="Right_Bar">
+            <div>Help</div>
+            <div>Manage Booking</div>
+            <div class="Down_Array">
+              <span class="material-symbols-outlined">
+                expand_circle_down
+              </span>
+            </div>
+            <div class="Profile">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </div>
+            <div class="Down_Array">
+              <span class="material-symbols-outlined">
+                expand_circle_down
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="destination_header">
+        <div class="details_destination">
+          <span id="fromeName"></span>
+          <span class="material-symbols-outlined arrowIcons">
+            arrow_right_alt
+          </span>
+          <span id="toName"></span>
+
+          <span class="material-symbols-outlined arrowIcons">
+            chevron_left
+          </span>
+          <span id="fullDate"></span>
+
+          <span class="material-symbols-outlined arrowIcons">
+            chevron_right
+          </span>
+          <a href="http://127.0.0.1:5501/?"
+            ><button class="modifyBtn">Modify</button></a
+          >
+        </div>
+      </div>
+      <div>
+        <img
+          class="bus-banner"
+          src="https://digiday.com/wp-content/uploads/sites/3/2022/04/Image-from-iOS.gif"
+          alt="Bus-Banner"
+        />
+      </div>
+      <div class="offersImges">
+        <img
+          class="offrsImges banners"
+          src="https://s3.rdbuz.com/Images/ReddealsCards/IND/Returnonward_MainCard.png"
+          alt="Offers_Images"
+        />
+        <img
+          class="offrsImges banners"
+          src="	https://s3.rdbuz.com/Images/ReddealsCards/IND/FlexiTicket_MainCard.png"
+          alt="Offers_Images"
+        />
+        <img
+          class="offrsImges banners"
+          src="	https://s3.rdbuz.com/Images/ReddealsCards/IND/4_10_MainCard.png"
+          alt="Offers_Images"
+        />
+        <img
+          class="offrsImges banners"
+          src="https://s3.rdbuz.com/Images/ReddealsCards/IND/Returnonward_MainCard.png"
+          alt="Offers_Images"
+        />
+      </div>
+      <div class="rightside">
+        <div class="saftyText">
+          <span class="material-symbols-outlined saftyicon">
+            safety_check
+          </span>
+          <span class="saftytxt"
+            >All bus ratings include safety as a major factor</span
+          >
+        </div>
+        <hr class="saftyhorijntol" />
+        <div class="busdetail">
+          <div class="frstdeatil">
+            <div class="boldcolor spacing">2 Buses</div>
+            <div>Found</div>
+            <div class="boldcolor spacingby">Sort by:</div>
+            <div>Departure</div>
+            <div>Duration</div>
+            <div>Arrival</div>
+            <div>Ratings</div>
+            <div>Fare</div>
+            <div class="seats">Seats Available</div>
+          </div>
+          <div class="secnddetail">
+            Results found for <span class="boldcolor" id="fromeName2"></span
+            ><span>To</span><span class="boldcolor" id="toName2"></span>
+          </div>
+          <div class="thirddetail">
+            <span>Showing</span><span class="boldcolor">2 Buses</span
+            ><span>from</span><span class="boldcolor" id="fromeName3"></span
+            ><span>To</span><span class="boldcolor" id="toName3"></span>
+          </div>
+        </div>
+        <div class="frstBus">
+          <div class="detailfrstBus">
+            <div class="namedetails cmnflex">
+              <div class="boldcolor busName">Ashok Travels Mandsaur Group</div>
+              <div class="busName">Volvo Multi-Axle A/C Sleeper (2+1)</div>
+            </div>
+            <div class="landin cmnflex">
+              <div class="boldcolor busName">18:15</div>
+              <p id="fromeName4"></p>
+            </div>
+            <div class="tme">15h 45m</div>
+            <div class="landout cmnflex namedetails namdetails1">
+              <div>10:00</div>
+              <div class="txtred">05 - oct</div>
+              <p id="toName4"></p>
+            </div>
+            <div class="ratingpeple cmnflex">
+              <div class="ratingicn">
+                <img class="star" src="Images/star.svg" alt="star" />
+                <span class="startxt">3.9</span>
+              </div>
+              <div class="ratingic">
+                <span>230 people</span>
+              </div>
+            </div>
+            <div class="paise cmnflex">
+              <div>
+                INR <span class="linecut">2500 </span
+                ><span class="boldcolor busName"> 2000</span>
+              </div>
+              <div>Red deal applied</div>
+            </div>
+            <div class="seatsavl cmnflex">
+              <div><span>36</span> Seats available</div>
+              <div><span>12</span> Single</div>
+            </div>
+          </div>
+          <div class="facilityicon">
+            <span class="material-symbols-outlined"> liquor </span
+            ><span class="material-symbols-outlined"> single_bed </span
+            ><span class="material-symbols-outlined"> ev_charger </span
+            ><span class="material-symbols-outlined"> add_circle </span>
+            <span class="livetracking">
+              <button class="btnicnbtn">
+                <span>Live Tracking</span>
+                <span class="material-symbols-outlined btmicn">
+                  assistant_direction
+                </span>
+              </button>
+            </span>
+            <span class="datechnge livetracking">
+              <button class="btnicnbtn">
+                <span>Change Date</span>
+                <span class="material-symbols-outlined btmicn">
+                  calendar_month
+                </span>
+              </button>
+            </span>
+          </div>
+          <div class="hovertext">
+            <span class="busName">Amenities</span>|
+            <span class="busName">Bus Photos</span> |<span class="busName"
+              >Bording & Droping Points</span
+            >
+            |<span class="busName">Reviews</span> |<span class="busName"
+              >Booking Policies</span
+            >
+          </div>
+
+          <button id="viewSeatss" class="viewseats">VIEW SEATS</button>
+        </div>
+        <div class="passengerSeatsContainers" id="viewSeatPage"></div>
+
+        <div class="frstBus">
+          <div class="detailfrstBus">
+            <div class="namedetails cmnflex">
+              <div class="boldcolor busName">Verma Travels Group</div>
+              <div class="busName">Volvo Multi-Axle A/C Sleeper (2+1)</div>
+            </div>
+            <div class="landin cmnflex">
+              <div class="boldcolor">11:50</div>
+              <p id="fromeName5"></p>
+            </div>
+            <div class="tme">8h 30m</div>
+            <div class="landout cmnflex namedetails namdetails1">
+              <div>08:30</div>
+              <div class="txtred">10 - jan</div>
+              <p id="toName5"></p>
+            </div>
+            <div class="ratingpeple cmnflex">
+              <div class="ratingicn">
+                <img class="star" src="Images/star.svg" alt="star" />
+                <span class="startxt">4.2</span>
+              </div>
+              <div class="ratingic">
+                <span>126 people</span>
+              </div>
+            </div>
+            <div class="paise cmnflex">
+              <div>
+                INR <span class="linecut">2100 </span
+                ><span class="boldcolor busName"> 1800</span>
+              </div>
+              <div>Red deal applied</div>
+            </div>
+            <div class="seatsavl cmnflex">
+              <div><span>12</span> Seats available</div>
+              <div><span>9</span> Single</div>
+            </div>
+          </div>
+          <div class="facilityicon">
+            <span class="material-symbols-outlined"> liquor </span
+            ><span class="material-symbols-outlined"> single_bed </span
+            ><span class="material-symbols-outlined"> ev_charger </span
+            ><span class="material-symbols-outlined"> add_circle </span>
+            <span class="livetracking">
+              <button class="btnicnbtn">
+                <span>Live Tracking</span>
+                <span class="material-symbols-outlined btmicn">
+                  assistant_direction
+                </span>
+              </button>
+            </span>
+            <span class="datechnge livetracking">
+              <button class="btnicnbtn">
+                <span>Change Date</span>
+                <span class="material-symbols-outlined btmicn">
+                  calendar_month
+                </span>
+              </button>
+            </span>
+          </div>
+          <div class="hovertext">
+            <span class="busName">Amenities</span>|
+            <span class="busName">Bus Photos</span> |<span class="busName"
+              >Bording & Droping Points</span
+            >
+            |<span class="busName">Reviews</span> |<span class="busName"
+              >Booking Policies</span
+            >
+          </div>
+
+          <button id="viewSeatsss" class="viewseats">VIEW SEATS</button>
+        </div>
+        <div class="passengerSeatsContainers" id="viewSeatPagesss"></div>
+      </div>
+      <i class="icon icon-safety_star d-block safety-star-rating"></i>
+    </div>
+    <div id="msgBala"></div>
+  </body>
+</html>
+<script src="search-buses.js"></script>
+<script src="view seats.js"></script>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Bus Travels , AC..</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYrYzZYA5DHxmRF1CjaeoPztKr4LU-g8C8GA&usqp=CAU"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="Parent_Container">
+      <div class="Header">
+        <div class="Main_Header">
+          <div class="Bus_Image">
+            <a href="http://127.0.0.1:5501/?" target="blank"
+              ><img src="Images/redbus logo.png" alt="RedBus_Image"
+            /></a>
+          </div>
+          <div class="Left_Bar">
+            <nav>
+              <ul class="ul1">
+                <li class="li1">BUS TICKETS</li>
+                <hr class="horizontal" />
+                <li class="list4">
+                  rYde
+                  <sup style="font-weight: bold">New</sup>
+                </li>
+                <li class="list4">
+                  redRail
+                  <sup style="font-weight: bold">New</sup>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="Right_Bar">
+            <div>Help</div>
+            <div>Manage Booking</div>
+            <div class="Down_Array">
+              <span class="material-symbols-outlined">
+                expand_circle_down
+              </span>
+            </div>
+            <div class="Profile">
+              <span class="material-symbols-outlined"> account_circle </span>
+            </div>
+            <div class="Down_Array">
+              <span class="material-symbols-outlined">
+                expand_circle_down
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Middle_Img">
+        <div class="middle_Img">
+          <img
+            class="Back_Img"
+            src="Images/background image.jpg"
+            alt="Background_Image"
+          />
+        </div>
+      </div>
+      <form autocomplete="off" id="inputField">
+        <div class="inputBox">
+          <div class="fromInputBox">
+            <span class="material-symbols-outlined spanIcon">
+              location_city
+            </span>
+            <div class="inp">
+              <input
+                id="inputFirst"
+                name="fromDestination"
+                onkeyup="handleInputValue(event)"
+                type="text"
+                class="iinput"
+              /><strong></strong>
+              <span class="from">FROM</span>
+              <div class="error list"></div>
+              <div id="s1"></div>
+            </div>
+          </div>
+          <div class="circle">
+            <span class="material-symbols-outlined cirrcle">
+              swap_horizontal_circle
+            </span>
+          </div>
+          <div class="toInputBox">
+            <span class="material-symbols-outlined spanIcon spanIcon1">
+              location_city
+            </span>
+            <div class="inp">
+              <input
+                id="inputSecond"
+                type="text"
+                onkeyup="handleInputValue(event)"
+                name="toDestination"
+                class="iinput paddingLeft"
+              /><strong></strong><span class="from form1">TO</span>
+              <div class="error lists"></div>
+              <div id="s2"></div>
+              <div id="s3"></div>
+            </div>
+          </div>
+          <div class="dateInputBox">
+            <div class="inp">
+              <input
+                type="date"
+                class="dateinpt"
+                id="flightDate"
+                onchange="handleDateSelection(event)"
+              />
+              <div class="error"></div>
+              <span id="s5"></span>
+              <div id="h" class="messageToastContent">
+                <div class="messageToast">
+                  <span class="material-symbols-outlined simbol"> cancel </span>
+                  <span class="msgTxtToast">Can't Select a Past Date</span>
+                </div>
+                <span id="crs" class="material-symbols-outlined cross">
+                  close
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="bttn">
+            <button
+              id="nxtBtn"
+              class="searchBtn"
+              onclick="validateForm(event);"
+            >
+              Search Buses
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="Upper_Mid_Img">
+        <div class="Top_Img">
+          <img
+            src="https://st.redbus.in/Images/RHSS/2022/hero/100x100.png"
+            alt="Offer_Image"
+          />
+        </div>
+        <div class="Top_Text">
+          <span class="text"> SAVE UPTO RS 300* ON YOUR BUS TICKETS. </span>
+          <div class="book">Book your favourite seat now.</div>
+        </div>
+      </div>
+      <div class="Midddle">
+        <div class="Btm_Offers">
+          <div class="parent_Div">
+            <div class="first_list">
+              <span class="offer"> Save up to Rs 300 on bus tickets </span>
+              <span class="offer_img"
+                ><img
+                  src="	https://st.redbus.in/images/offers/dussera_rav/274x148_EarlyBus.png"
+                  alt="Offer_Image"
+              /></span>
+              <span class="Code_Text"> Use code EARLYBUS </span>
+            </div>
+          </div>
+          <div class="parent_Div">
+            <div class="first_list">
+              <span class="offer"> Save up to Rs 300 on bus tickets </span>
+              <span class="offer_img"
+                ><img
+                  src="https://st.redbus.in/images/offers/superhit_rav/1_1.png"
+                  alt="Offer_Image"
+              /></span>
+              <span class="Code_Text"> Use code EARLYBUS </span>
+            </div>
+          </div>
+          <div class="parent_Div">
+            <div class="first_list">
+              <span class="offer"> Save up to Rs 300 on bus tickets </span>
+              <span class="offer_img"
+                ><img
+                  src="	https://st.redbus.in/Images/INDOFFER/RB200/274x148.png"
+                  alt="Offer_Image"
+              /></span>
+              <span class="Code_Text"> Use code EARLYBUS </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Flag">
+      <div class="flag_list1">
+        <div class="frst">
+          <img class="iimg" src="Images/india.png" alt="India_Flag" />
+          <div>INDIA</div>
+        </div>
+
+        <div class="frst">
+          <img class="iimg" src="Images/indonesia.png" alt="Indonesia_Flag" />
+          <div>INDONESIA</div>
+        </div>
+        <div class="frst">
+          <img class="iimg" src="Images/usa.png" alt="USA_Flag" />
+          <div>USA</div>
+        </div>
+      </div>
+      <div class="flag_list1">
+        <div class="frst">
+          <img class="iimg" src="Images/colombia.png" alt="Colombia_Flag" />
+          <div>COLOMBIA</div>
+        </div>
+        <div class="frst">
+          <img class="iimg" src="Images/georgia.png" alt="Georgiaa_Flag" />
+          <div>GEORGIA</div>
+        </div>
+        <div class="frst">
+          <img class="iimg" src="Images/mongollia.png" alt="Mongolia_Flag" />
+          <div>MONGOLIA</div>
+        </div>
+      </div>
+    </div>
+    <div class="Center">
+      <div class="inner_Center">
+        <div class="imgg">
+          <img
+            src="https://i.postimg.cc/xTDTr7DW/hero-ontime.png"
+            alt="hero_ontime"
+            width="80px"
+          />
+        </div>
+
+        <div class="tteexxt">
+          <div class="Intro">
+            <p class="p1">Introducing On-Time Guarantee</p>
+            <p class="p2">Leave on time, everytime</p>
+          </div>
+
+          <div class="nxt">
+            <p class="">
+              <span
+                ><img
+                  class="bulb"
+                  src="https://i.postimg.cc/Z5Ym4zfD/tip-icon.png"
+                  height="23"
+              /></span>
+              Look for buses with
+            </p>
+            <p class="bulb2">
+              <img src="https://i.postimg.cc/fyxsTzn1/otgText.png" />
+            </p>
+            <p class="">tag while booking your journey</p>
+          </div>
+
+          <div class="same">
+            <div>
+              <h5 class="time">Bus on time</h5>
+              <div class="refund">Get 25% refund</div>
+              <div class="last">
+                If bus departure is delayed by 30 mins from <br />
+                boarding point.
+              </div>
+            </div>
+
+            <div>
+              <h5 class="time">No bus cancellation</h5>
+              <div class="refund">Get 150% refund</div>
+              <div class="last">
+                Bus is cancelled without an alternate <br />
+                arrangement.
+              </div>
+            </div>
+
+            <div>
+              <h5 class="time">Alternate assurance</h5>
+              <div class="refund">Get 300% refund</div>
+              <div class="last">
+                Bus breaks down with no alternate arrangement <br />
+                within 6 hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="hrr" />
+    <div class="Footer1">
+      <div class="inside_Footer1">
+        <div class="secnd">
+          <div class="header1">Top Bus Routes</div>
+          <div class="header2">Hyderabad to Bangalore Bus</div>
+          <div class="header2">Bangalore to Chennai Bus</div>
+          <div class="header2">Pune to Bangalore Bus</div>
+          <div class="header2">Mumbai to Bangalore Bus</div>
+          <div class="header2">More</div>
+        </div>
+        <div class="secnd">
+          <div class="header1">Top Cities</div>
+          <div class="header2">Hyderabad Bus Tickets</div>
+          <div class="header2">Bangalore Bus Tickets</div>
+          <div class="header2">Chennai Bus Tickets</div>
+          <div class="header2">Pune Bus Tickets</div>
+          <div class="header2">More</div>
+        </div>
+        <div class="secnd">
+          <div class="header1">Top RTC's</div>
+          <div class="header2">APSRTC</div>
+          <div class="header2">GSRTC</div>
+          <div class="header2">MSRTC</div>
+          <div class="header2">TNSTC</div>
+          <div class="header2">More</div>
+        </div>
+        <div class="secnd">
+          <div class="header1">Other</div>
+          <div class="header2">TSRTC</div>
+          <div class="header2">SBSTC</div>
+          <div class="header2">RSRTC</div>
+          <div class="header2">KeralaRTC</div>
+          <div class="header2">More</div>
+        </div>
+        <div class="secnd">
+          <div class="header1">Tempo Traveller in Cities</div>
+          <div class="header2">Tempo traveller in Bangalore</div>
+          <div class="header2">Tempo traveller in Chennai</div>
+          <div class="header2">Tempo traveller in Mumbai</div>
+          <div class="header2">Tempo traveller in Hyderabad</div>
+          <div class="header2">Tempo traveller in Ahmedabad</div>
+        </div>
+      </div>
+    </div>
+    <div class="Footer2"></div>
+    <hr class="hrr" />
+    <div class="btm_footer">
+      <div class="innner">
+        <div class="fst">
+          <div class="btmheader">About redbus</div>
+          <div>About Us</div>
+          <div>Contact Us</div>
+          <div>Mobile Version</div>
+          <div>redbus on mobile</div>
+          <div>Site map</div>
+          <div>Carrers</div>
+          <div>Offers</div>
+          <div>Values</div>
+        </div>
+        <div class="fst">
+          <div class="btmheader">Info</div>
+          <div>T &nbsp; C</div>
+          <div>Privacy Policy</div>
+          <div>FAQ</div>
+          <div>Blog</div>
+          <div>Bus Operator Registration</div>
+          <div>Agent Registration</div>
+          <div>Insurance Partner</div>
+        </div>
+        <div class="fst">
+          <div class="btmheader">Global sites</div>
+          <div>India</div>
+          <div>Singapure</div>
+          <div>Malaysia</div>
+          <div>Indonesia</div>
+          <div>USA</div>
+          <div>Colombia</div>
+        </div>
+        <div class="fst">
+          <div class="btmheader">Our Partner</div>
+          <div>Goibibo</div>
+          <div>Makemytrip</div>
+          <div></div>
+        </div>
+        <div class="fst">
+          <div class="bussimg">
+            <img src="Images/redbus logo.png" alt="RedBus_Image" />
+          </div>
+          <div>
+            redBus is the world's largest online bus ticket <br />
+            booking service trusted by over 25 million <br />
+            happy customers globally. redBus offers bus <br />
+            ticket booking through its website,iOS and <br />
+            Android mobile apps for all major routes.
+          </div>
+          <div class="media">
+            <img
+              class="mimg"
+              src="https://www.facebook.com/images/fb_icon_325x325.png"
+              alt=""
+            />
+            <img
+              class="mimg"
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </div>
+          <div>
+            <span>Ⓒ</span><span> 2022 ibibogroup All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+<script src="script.js"></script>

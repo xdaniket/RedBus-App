@@ -1,0 +1,230 @@
+.nxtHeader {
+  background-color: #d84f57;
+  color: white;
+  z-index: 10;
+  width: 100%;
+  height: 68px;
+  font-family: Montserrat;
+}
+.destination_header {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 10px 15px 79px;
+  color: #4a4a4a;
+  font-size: 18px;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 1;
+}
+.arrowIcons {
+  position: relative;
+  top: 7px;
+}
+.modifyBtn {
+  padding: 3px 12px 3px 12px;
+  color: #4a4a4a;
+  font-size: 15px;
+  border: 1px solid #3e3e52;
+  border-radius: 3px;
+  background-color: #f8f4f4;
+}
+
+.offersImges {
+  margin-left: 230px;
+  display: flex;
+  gap: 160px;
+  margin-top: 40px;
+}
+.offrsImges {
+  height: 120px;
+  transition: all 0.6s ease;
+}
+.offersImges .offrsImges:hover {
+  transform: scale(1.2);
+}
+.rightside {
+  margin-left: 232px;
+}
+
+.bus-banner {
+  height: 280px;
+  width: 60%;
+  margin-left: 328px;
+}
+.saftyicon {
+  font-size: 31px;
+  color: #575759;
+  position: relative;
+  top: 7px;
+  margin-right: 12px;
+}
+.saftyText {
+  margin-top: 19px;
+}
+.saftytxt {
+  color: #3b3b3d;
+  font-size: 18px;
+  font-weight: bold;
+}
+.saftyhorijntol {
+  border: 0.8px solid rgb(166 150 150);
+  margin: 23px 201px 24px -1px;
+}
+.busdetail {
+  display: flex;
+  flex-direction: column;
+  color: #575759;
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+.frstdeatil {
+  display: flex;
+  gap: 65px;
+  align-items: center;
+}
+.spacing {
+  margin-right: -58px;
+}
+.secnddetail {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  margin: 20px 0 20px 0;
+}
+.thirddetail {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.boldcolor {
+  color: #626060;
+  font-size: 18px;
+  font-weight: 600;
+}
+.seats {
+  margin-left: 55px;
+}
+.spacingby {
+  margin-left: 90px;
+  margin-right: -53px;
+}
+.frstBus {
+  margin-top: 28px;
+  color: #3b3b3d;
+  border: 1px solid #dcd9d9;
+  padding: 19px 0 0 24px;
+  width: 1127px;
+}
+.frstBus:hover {
+  box-shadow: 0 16px 30px 1px rgb(28 27 27 / 10%);
+  transition: 1s;
+  background: #f2f2f2;
+}
+.detailfrstBus {
+  display: flex;
+  gap: 27px;
+}
+.busName {
+  color: #2b2a2a;
+}
+.cmnflex {
+  display: flex;
+  flex-direction: column;
+}
+.namedetails {
+  gap: 13px;
+}
+.namdetails1 {
+  margin-left: 30px;
+}
+
+.landin {
+  gap: 43px;
+  margin-left: 45px;
+}
+.tme {
+  margin-left: 39px;
+}
+.paise {
+  gap: 8px;
+  margin-left: 16px;
+}
+.seatsavl {
+  margin-top: 13px;
+  gap: 3px;
+  margin-left: 22px;
+}
+.ratingpeple {
+  margin-right: -9px;
+  /* margin-left: -22px; */
+  display: flex;
+  margin-left: 18px;
+  flex-direction: column;
+  gap: 9px;
+}
+.ratingicn {
+  background-color: #ebaf3c;
+  color: white;
+  text-align: center;
+  width: 64px;
+  border-radius: 5px;
+}
+.star {
+  position: relative;
+  top: 2px;
+  height: 22px;
+}
+.startxt {
+  position: relative;
+  bottom: 3px;
+}
+.linecut {
+  text-decoration-line: line-through;
+}
+.txtred {
+  color: red;
+}
+.facilityicon {
+  display: flex;
+  gap: 7px;
+  margin-top: 28px;
+}
+.btnicnbtn {
+  padding: 0px 7px 6px 7px;
+  border-radius: 3px;
+  background-color: #f8f4f4;
+  border: none;
+}
+.btmicn {
+  position: relative;
+  top: 7px;
+  color: #a5a2a2;
+}
+.livetracking {
+  margin: 0 -8px 0 19px;
+  position: relative;
+  bottom: 5px;
+}
+.viewseats {
+  text-align: center;
+  background-color: #d84e55;
+  border: none;
+  margin-left: 998px;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.hovertext {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  top: 30px;
+  margin-left: 391px;
+  opacity: 0;
+}
+.frstBus:hover .hovertext {
+  opacity: 1;
+  transition: 1.5s;
+}
